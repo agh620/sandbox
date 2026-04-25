@@ -1,0 +1,46 @@
+name: Download to Artifact (No Split)
+on:
+  push:
+    branches:
+      - "**"
+jobs:
+  download-and-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install aria2
+        run: sudo apt-get install -y aria2
+
+      - name: Extract URLs and Download
+        run: |
+          MSG=$(git log -1 --pretty=%B)
+          echo "Commit message: $MSG"
+
+          # Looking for "download-box"
+          if echo "$MSG" | grep -qP 'download-box:'; then
+            URL_LINE=$(echo "$MSG" | grep -oP 'download-box:\s*\K.*' | tr '\n' ' ')
+          else
+            echo "❌ No download-box command found. Skipping this workflow."
+            exit 0
+          fi
+
+          mkdir -p final_files
+
+          for URL in $URL_LINE; do
+            [ -z "$URL" ] && continue
+            echo "⬇️ Downloading $URL"
+            aria2c \
+              --split=2 \
+              --max-connection-per-server=2 \
+              --dir="final_files" \
+              "$URL"
+          done
+
+      - name: Provide File for Download (Artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: My-Videos-Archive
+          path: final_files/*
+          retention-days: 7
