@@ -2,6 +2,12 @@
 > Click on any link below to start downloading directly.<br><br/>
 
 
+### 📅 2026-05-02 19:34 IR
+- 🎬 [How to Transfer Files Between Redmi Note 13 and a Windows Laptop.mp4](https://github.com/agh620/sandbox/raw/main/dl/How%20to%20Transfer%20Files%20Between%20Redmi%20Note%2013%20and%20a%20Windows%20Laptop.mp4) `12.6MB`
+
+---
+
+
 ### 📅 2026-05-01 11:44 IR
 - 🎬 [أشهر مكملات الجيم… ما فائدتها فعلاً؟ (شرح في 9 دقائق).mp4](https://github.com/agh620/sandbox/raw/main/dl/%D8%A3%D8%B4%D9%87%D8%B1%20%D9%85%D9%83%D9%85%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AC%D9%8A%D9%85%E2%80%A6%20%D9%85%D8%A7%20%D9%81%D8%A7%D8%A6%D8%AF%D8%AA%D9%87%D8%A7%20%D9%81%D8%B9%D9%84%D8%A7%D9%8B%D8%9F%20%28%D8%B4%D8%B1%D8%AD%20%D9%81%D9%8A%209%20%D8%AF%D9%82%D8%A7%D8%A6%D9%82%29.mp4) `42.4MB`
 
